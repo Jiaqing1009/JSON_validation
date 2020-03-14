@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class JsonValidator {
-    
+
     private static int array_pointer;
     private static String string;
     private static char current_char;
@@ -281,7 +281,7 @@ public class JsonValidator {
         System.out.println("For 3 pass test cases:");
         for(int i = 1; i <= 3 ; i++) {
             try{
-                String input_string = readFileToString("test/pass" + 1 + ".json");
+                String input_string = readFileToString("test/pass" + i + ".json");
                 if(JsonValidator.isJSON(input_string.trim()) == true){
                     count_pass ++ ;
                 }
